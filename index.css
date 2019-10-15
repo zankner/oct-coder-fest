@@ -1,0 +1,68 @@
+.title {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.head {
+	height: 100px;
+	width: 150px;
+	border: solid 1px grey;
+	margin-top: 30px;
+}
+
+.body {
+	height: 200px;
+	width: 150px;
+	border: solid 1px grey;
+}
+
+.legs {
+	height: 220px;
+	width: 150px;
+	border: solid 1px grey;
+}
+
+.arrow-left {
+	position: relative;
+	top: 34px;
+	left: 30px;
+	font-size: 56px !important;
+}
+
+.arrow-right {
+	position: relative;
+	top: 30px;
+	right: 32px;
+	font-size: 56px !important;
+}
+
+.icon {
+	position: relative;
+	bottom: 8px;
+}
+
+.container {
+	/*background-color: #F5F5F5;*/
+	margin-top: 20px;
+	padding-bottom: 30px;
+}
+
+.head {
+	background-image: ;
+}
+
+.body {
+	background-image: ;
+}
+
+.legs {
+	background-image: ;
+}
+
+.hales {
+	position: fixed;
+	top: 13%;
+	left: 40%;
+	height: 600px;
+	z-index: -1;
+}

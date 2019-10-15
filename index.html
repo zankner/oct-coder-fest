@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="./index.js"></script>
+</head>
+<body>
+	<img class="hales" src="./img/hales.png">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="text-center title" style="padding-right: 10px">Ghostly Good Looks</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 offset-4">
+				<button type="button" class="btn btn-light arrow-left" id="head-left"><i class="material-icons icon">keyboard_arrow_left</i>
+			</div>
+			<div class="col-2">
+				<img id="head" class="head">
+			</div>
+			<div class="col-1">
+				<button type="button" class="btn btn-light arrow-right" id="head-right"><i class="material-icons icon">keyboard_arrow_right</i></button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 offset-4">
+				<button type="button" class="btn btn-light arrow-left" id="body-left"><i class="material-icons icon">keyboard_arrow_left</i></button>
+			</div>
+			<div class="col-2">
+				<img id="body" class="body">
+			</div>
+			<div class="col-1">
+				<button type="button" class="btn btn-light arrow-right" id="body-right"><i class="material-icons icon">keyboard_arrow_right</i></button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 offset-4">
+				<button type="button" class="btn btn-light arrow-left" id="legs-left"><i class="material-icons icon">keyboard_arrow_left</i></button>
+			</div>
+			<div class="col-2">
+				<img id="legs" class="legs">
+			</div>
+			<div class="col-1">
+				<button type="button" class="btn btn-light arrow-right" id="legs-right"><i class="material-icons icon">keyboard_arrow_right</i></button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	const hats = ['./img/ikea-hat.png', './img/bowtie.png', './img/glasses.png', './img/crocs.png'];
+	const bodys = ['./img/bullet-proof.png', './img/flannel.png', './img/herd-jacket .png', './img/wawa.png'];
+	const legs = ['./img/fishing-waiders.png', './img/joggers.png', './img/pj-bottom.png', './img/sweatpants-tucked.png', './img/yoga-pants.png'];
+	let hat = 0;
+	let body = 0;
+	let leg = 0;
+
+	$('#head-right').click(() => {
+		hat+=1;
+		$('#head').attr('src', hats[hat]);
+	});
+
+	$('#head-left').click(() => {
+		hat-=1;
+		$('#head').attr('src', hats[hat]);
+	});
+
+	$('#body-right').click(() => {
+		body+=1;
+		$('#body').attr('src', bodys[body]);
+	});
+
+	$('#body-left').click(() => {
+		body-=1;
+		$('#body').attr('src', bodys[body]);
+	});
+
+	$('#legs-right').click(() => {
+		leg+=1;
+		$('#legs').attr('src', legs[leg]);
+	});
+
+	$('#legs-left').click(() => {
+		leg-=1;
+		$('#legs').attr('src', legs[leg]);
+	});
+</script>
+
+
