@@ -1,5 +1,42 @@
+.container {
+	margin-top: 20px;
+	position: fixed;
+	padding-left: 19%;
+}
+
 .title {
 	text-align: center;
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+
+.arrow-left {
+	position: relative;
+	left: 40px;
+	margin-top: 50%;
+	font-size: 30px !important;
+	z-index: 100;
+}
+
+.arrow-left:hover {
+	cursor: pointer;
+	border: 1px solid grey;
+	border-radius: 10px;
+}
+
+.arrow-right {
+	margin-top: 50%;
+	font-size: 30px !important;
+	margin-left: 8px;
+}
+
+.arrow-right:hover {
+	cursor: pointer;
+	border: 1px solid grey;
+	border-radius: 10px;
+}
+
+.head-row {
 	margin-top: 50px;
 }
 
@@ -7,62 +44,104 @@
 	height: 100px;
 	width: 150px;
 	border: solid 1px grey;
-	margin-top: 30px;
+}
+
+.bowtie {
+	position: relative;
+	top: 60px;
+	left: 14px;
+	width: 115px;
+	height: 65px;
+	z-index: 100;
+}
+
+.glasses {
+	width: 92px;
+	position: relative;
+	top: 20px;
+	left: 27px;
+}
+
+.ikea {
+	height: 77px;
+	position: relative;
+	bottom: 16px;
+	left: 26px;
+	width: 93px;
 }
 
 .body {
-	height: 200px;
+	height: 210px;
 	width: 150px;
 	border: solid 1px grey;
 }
 
+.body-img {
+	height: 210px;
+	width: 200px;
+	position: relative;
+	right: 25px;
+}
+
 .legs {
-	height: 220px;
+	height: 160px;
 	width: 150px;
 	border: solid 1px grey;
 }
 
-.arrow-left {
+.waiders {
 	position: relative;
-	top: 34px;
-	left: 30px;
-	font-size: 56px !important;
+	bottom: 242px;
+	width: 162px;
 }
 
-.arrow-right {
+.sweat-pants {
 	position: relative;
-	top: 30px;
-	right: 32px;
-	font-size: 56px !important;
+	width: 141px;
+	height: 188px;
+	bottom: 15px;
 }
 
-.icon {
+.pjs {
+	width: 252px;
+	height: 210px;
 	position: relative;
-	bottom: 8px;
+	right: 43px;
+	bottom: 20px;
 }
 
-.container {
-	/*background-color: #F5F5F5;*/
-	margin-top: 20px;
-	padding-bottom: 30px;
+.shoes {
+	height: 60px;
+	width: 150px;
+	border: solid 1px grey;
 }
 
-.head {
-	background-image: ;
+.flip-flops {
+	position: relative;
+	width: 115px;
+	bottom: 20px;
 }
 
-.body {
-	background-image: ;
+.crocs {
+	width: 160px;
+	position: relative;
+	bottom: 38px;
+	right: 10px;
 }
 
-.legs {
-	background-image: ;
+.jordans {
+	width: 118px;
+	position: relative;
+	bottom: 55px;
 }
 
 .hales {
 	position: fixed;
-	top: 13%;
-	left: 40%;
+	top: 100px;
+	left: 570px;
 	height: 600px;
 	z-index: -1;
+	margin-top: 20px;
 }
+
+IMG:not([src]) {opacity:0;}
